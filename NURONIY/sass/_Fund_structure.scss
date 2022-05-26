@@ -1,0 +1,55 @@
+// Fund_structure start
+
+.Fund_structure {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    &__top {
+        margin-top: 30px;
+    }
+
+    &__logo {
+        @include fiximg(100%, 500px, true);
+
+        img {
+            object-position: center center;
+        }
+    }
+}
+
+// Fund_structure end
+
+
+@media (max-width:1250px) {
+    .Fund_structure {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .Fund_structure__logo {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media (max-width:840px) {
+    .Fund_structure__logo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width:650px) {
+    .Fund_structure {
+        margin-right: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+}
