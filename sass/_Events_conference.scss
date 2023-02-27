@@ -1,0 +1,354 @@
+/*======The conference start======*/
+
+
+.conference {
+    margin-bottom: 80px;
+    position: relative;
+
+    &__title__h1 {
+        @include fontAll(30px, 700, $blik);
+        line-height: 40px;
+        padding-top: 6px;
+        padding-bottom: 32px;
+    }
+
+    &__cart__max__title {
+        @include fontAll(24px, 700, $blik);
+        line-height: 32px;
+    }
+
+    &__cart__max__data {
+        @include fontAll(10px, 600, $blik);
+        line-height: 12px;
+        padding-top: 11px;
+        text-transform: uppercase;
+    }
+
+    &__max__logo {
+        @include fiximg(100%, 230px, true);
+    }
+
+
+    &__cart1 {
+        width: 360px;
+        height: 310px;
+        background-color: #fff;
+        border: 1px solid $blue;
+        @extend%transition;
+    }
+
+    &__cart__title__h1 {
+        @include fontAll(22px, 600, $blik);
+        padding: 18px 20px 11px 30px;
+        @extend%transition;
+        max-height: 70px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &__cart__data {
+        @include fontAll(10px, 600, $blik);
+        text-transform: uppercase;
+        padding: 5px 20px 11px 30px;
+        @extend%transition;
+    }
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+    }
+
+    &__max__logo {
+        @include fiximg(100%, 200px, true);
+        position: relative;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 0.4s ease transform;
+            -webkit-transition: 0.4s ease transform;
+            -moz-transition: 0.4s ease transform;
+            -ms-transition: 0.4s ease transform;
+            -o-transition: 0.4s ease transform;
+        }
+    }
+}
+
+
+.conference__cart1:hover {
+    background-color: $blue;
+}
+
+.conference__cart1:hover .conference__cart__title__h1 {
+    color: #fff;
+}
+
+.conference__cart1:hover .conference__cart__data {
+    color: #fff;
+}
+
+.conference__cart1:hover .conference__max__logo img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/*======The conference   end======*/
+
+
+// pogination start
+
+.pogination {
+    position: relative;
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+
+    &__left__right {
+        @include fiximg(13.6px, 23.8px, true);
+        background-color: transparent;
+        margin: 0 10px;
+    }
+
+    &__number {
+        @include fontAll(18px, 500, $link);
+        margin: 5px;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
+        border: 2px solid $blue;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+    }
+}
+
+.pogination button.active {
+    background-color: $blue;
+    color: #fff;
+}
+
+// pogination end
+
+
+
+@media (max-width:1400px) {
+    .conference__top {
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1250px) {
+    .conference {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .conference__cart1 {
+        width: 48%;
+        height: 100%;
+    }
+
+    .conference__cart__title__h1 {
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width:890px) {
+
+    .conference__title__h1 {
+        font-size: 30px;
+        text-align: left;
+        line-height: 0px;
+        padding-top: 6px;
+        padding-bottom: 50px;
+    }
+
+    .conference {
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+
+    .conference__max__logo {
+        width: 100%;
+        height: 200px;
+    }
+
+    .conference__cart1 {
+        width: 47%;
+        height: 100%;
+    }
+
+    .conference__cart__max__title {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .conference__cart__title__h1 {
+        max-width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:770px) {
+
+
+    .conference__cart__max__title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+
+
+
+    .conference__cart__title__h1 {
+        font-size: 18px;
+        max-height: 60px;
+        max-width: 330px;
+        padding: 16px 15px 11px 20px;
+    }
+
+    .conference__cart__data {
+        font-size: 10px;
+        padding: 5px 20px 11px 20px;
+    }
+}
+
+
+@media (max-width:700px) {
+
+    .conference__title__h1 {
+        font-size: 28px;
+    }
+
+    .conference__top {
+        grid-gap: 20px;
+    }
+
+    .conference__cart1 {
+        width: 48%;
+        height: 100%;
+    }
+
+    .conference__max__logo {
+        width: 100%;
+        height: 160px;
+    }
+
+}
+
+
+@media (max-width:650px) {
+    .conference {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .conference__cart__title__h1 {
+        font-weight: 500;
+    }
+
+    .conference__cart__max__title {
+        font-size: 16px;
+        line-height: 20px;
+        overflow: hidden;
+        max-width: 280px;
+        max-height: 97px;
+        font-weight: 500;
+    }
+
+    .pogination {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width:550px) {
+
+
+    .conference__max__logo {
+        width: 100%;
+        height: 125px;
+    }
+
+    .conference__cart1 {
+        width: 47%;
+        height: 100%;
+    }
+
+    .conference__title__h1 {
+        font-size: 26px;
+    }
+
+
+
+
+    .conference__max__logo {
+        width: 100%;
+        height: 105px;
+    }
+
+
+
+    .conference__cart__title__h1 {
+        font-size: 14px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .conference__cart__data {
+        font-size: 10px;
+        padding: 11px 10px 11px 10px;
+    }
+
+    .conference__title__h1 {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width:405px) {
+    .conference__cart1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .conference__cart__max__title {
+        font-size: 14px;
+        overflow: hidden;
+        height: 80px;
+        max-width: 150px;
+    }
+
+    .conference__max__logo {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+
+@media (max-width:350px) {
+
+    .conference__cart__title__h1 {
+        font-size: 13px;
+        padding: 16px 10px 11px 10px;
+    }
+}
